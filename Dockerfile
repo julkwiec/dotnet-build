@@ -13,8 +13,8 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
     && curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && curl https://packages.microsoft.com/config/ubuntu/14.04/prod.list | tee /etc/apt/sources.list.d/microsoft.list \
     && apt-get update \
-    && apt-get install -y --no-install-recommends ca-certificates mono-complete ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl powershell \
-    && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y --no-install-recommends binutils ca-certificates mono-complete ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl powershell \
+    && rm -rf /var/lib/apt/lists/* /tmp/*
 
 # Preload NuGet cache
 COPY Warmup.csproj /tmp/warmup/
