@@ -1,10 +1,11 @@
 # Supported Linux amd64 tags
-- [`jessie-mono-stable` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/jessie/mono-stable/Dockerfile)
+- [`jessie-mono-stable`, `jessie` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/jessie/mono-stable/Dockerfile)
 - [`jessie-mono-beta` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/jessie/mono-beta/Dockerfile)
 - [`jessie-mono-alpha` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/jessie/mono-alpha/Dockerfile)
-- [`stretch-mono-stable` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/stretch/mono-stable/Dockerfile)
+- [`stretch-mono-stable`, `stretch`, `latest` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/stretch/mono-stable/Dockerfile)
 - [`stretch-mono-beta` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/stretch/mono-beta/Dockerfile)
 - [`stretch-mono-alpha` (*Dockerfile*)](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/stretch/mono-alpha/Dockerfile)
+The tags above refer to the latest build. For version-specific tags [check the `Tags` tab](https://hub.docker.com/r/julkwiec/dotnet-mono-powershell-build/tags/). Version history [is available on GitHub](https://github.com/julkwiec/dotnet-mono-powershell-build/blob/master/CHANGELOG.md).
 
 # What is this?
 This is a very opinionated base .NET Core build image. It's based on `microsoft/dotnet` and includes the following features:

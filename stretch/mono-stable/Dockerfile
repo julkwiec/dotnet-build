@@ -10,7 +10,7 @@ RUN apt-get update \
     && sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/microsoft.list' \
     && echo "deb http://download.mono-project.com/repo/debian stretch main" | tee /etc/apt/sources.list.d/mono-official.list \
     && apt-get update \
-    && apt-get install -y powershell binutils mono-complete referenceassemblies-pcl ca-certificates ca-certificates-mono fsharp mono-vbnc nuget \
+    && apt-get install -y powershell binutils mono-devel referenceassemblies-pcl ca-certificates ca-certificates-mono fsharp mono-vbnc nuget \
     && rm -rf /var/lib/apt/lists/* /tmp/*
 
 # Preload Paket cache
