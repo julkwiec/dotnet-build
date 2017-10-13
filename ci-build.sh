@@ -13,9 +13,6 @@ set -e
 
 
 STAGE=$1 # Travis CI job ID
-TRAVIS_TAG="12.34.56"
-DOCKER_USERNAME="julkwiec"
-DOCKER_PASSWORD="dt!gUwNVwP@mUzQSD5OwkU^j%f@R4sacitY5jEAx"
 
 DOCKER_REPO_NAME="julkwiec/test-repository" #"julkwiec/dotnet-mono-powershell-build"
 ALL_TAGS=()
