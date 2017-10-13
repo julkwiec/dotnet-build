@@ -9,13 +9,13 @@ install:
   - docker pull microsoft/dotnet:2-sdk-jessie
   - docker pull microsoft/dotnet:2-sdk
 
-before-script:
-  - chmod +x ./ci-build.sh
+before_script:
+  - sudo chmod +x ./ci-build.sh
 
 script:
-  - ./ci-build.sh 1
-  - ./ci-build.sh 2
-  - ./ci-build.sh 3
-  - ./ci-build.sh 4
-  - ./ci-build.sh 5
-  - ./ci-build.sh 6
+  - sudo ./ci-build.sh 1
+  - sudo ./ci-build.sh 2
+  - sudo ./ci-build.sh 3
+  - sudo ./ci-build.sh 4
+  - sudo ./ci-build.sh 5
+  - sudo ./ci-build.sh 6
