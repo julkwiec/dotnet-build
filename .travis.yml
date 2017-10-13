@@ -9,8 +9,10 @@ install:
   - docker pull microsoft/dotnet:2-sdk-jessie
   - docker pull microsoft/dotnet:2-sdk
 
-build:
+before-script:
   - chmod +x ./ci-build.sh
+
+script:
   - ./ci-build.sh 1
   - ./ci-build.sh 2
   - ./ci-build.sh 3
