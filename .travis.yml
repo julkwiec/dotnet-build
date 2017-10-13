@@ -1,0 +1,17 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker pull microsoft/dotnet:2-sdk-jessie
+  - docker pull microsoft/dotnet:2-sdk
+
+build:
+  - chmod +x ./ci-build.sh
+  - ./ci-build.sh 1
+  - ./ci-build.sh 2
+  - ./ci-build.sh 3
+  - ./ci-build.sh 4
+  - ./ci-build.sh 5
+  - ./ci-build.sh 6

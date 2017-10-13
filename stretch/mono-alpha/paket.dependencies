@@ -1,8 +1,0 @@
-source https://api.nuget.org/v3/index.json
-framework: netstandard2.0, netcoreapp2.0
-storage: none
-
-clitool Microsoft.VisualStudio.Web.CodeGeneration.Tools = 2.0.0
-nuget Microsoft.NETCore.App = 2.0.0
-nuget NETStandard.Library = 2.0.0
-nuget Microsoft.AspNetCore.All = 2.0.0
