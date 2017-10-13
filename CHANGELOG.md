@@ -1,3 +1,6 @@
+## 2.2.0
+- Migrated from Docker Hub automated build to Travis CI
+
 ## 2.1.0
 - Replaced `mono-complete` with `mono-devel`
 
