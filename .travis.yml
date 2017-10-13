@@ -3,6 +3,8 @@ sudo: required
 services:
   - docker
 
+language: generic
+
 install:
   - docker pull microsoft/dotnet:2-sdk-jessie
   - docker pull microsoft/dotnet:2-sdk
