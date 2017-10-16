@@ -14,7 +14,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* /tmp/*
 
 # Preload Paket cache
-ENV PAKET_VERSION 5.114.0
+ENV PAKET_VERSION 5.114.5
 COPY paket.dependencies /tmp/warmup/
 RUN cd /tmp/warmup \
     && curl -L -o ./paket.exe "https://github.com/fsprojects/Paket/releases/download/$PAKET_VERSION/paket.exe" \
