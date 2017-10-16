@@ -14,7 +14,7 @@ set -e
 
 STAGE=$1 # Travis CI job ID
 
-DOCKER_REPO_NAME="julkwiec/test-repository" #"julkwiec/dotnet-mono-powershell-build"
+DOCKER_REPO_NAME="julkwiec/dotnet-mono-powershell-build"
 ALL_TAGS=()
 
 build_and_tag() {
